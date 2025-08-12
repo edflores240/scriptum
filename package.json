@@ -13,7 +13,7 @@
     "build:esm": "esbuild src/react/EditorReact.tsx --bundle --format=esm --outfile=dist/scriptum.esm.js --external:react --external:react-dom",
     "build:umd": "esbuild src/index.umd.ts --bundle --format=iife --global-name=ScriptumEditor --outfile=dist/scriptum.js --external:prosemirror-*",
     "build": "npm run build:esm && npm run build:umd && npm run build:styles",
-    "build:styles": "sass src/styles/main.scss dist/scriptum.css",
+    "build:styles": "sass src/assets/styles/main.scss dist/scriptum.css",
     "dev": "vite",
     "preview": "vite preview"
   },
